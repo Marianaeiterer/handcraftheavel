@@ -22,7 +22,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
   //     }, 300);
 
   function handleSearch(term: string) {
-    const params = new URLSearchParams(searchParams);
+    const params = new URLSearchParams(searchParams.toString());
     if (term) {
       params.set("query", term);
     } else {
